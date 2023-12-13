@@ -10,16 +10,16 @@
 	- Monitor.py is the script needed to monitor the difference in the catalogs
 	- MainJob runs the Monitor.py on a schduler everyday at 10am
 ## Notifications
-	This script works with Power Automate to send a teams card once a change is detected (this may limit the script to only run on a gradapp computer)
+This script works with Power Automate to send a teams card once a change is detected (this may limit the script to only run on a gradapp computer)
 ## Running on your local machine -IMPORTANT
 1. This script contains paths to files and folders this script would fail if it's
   not running on gradApp computer or account
 
 2. So update the following accordingly
-	-Line 228 #dynamically get all filenames of  the old files
+	- Line 228 #dynamically get all filenames of  the old files
 	  oldfiles(("C:/Users/your_username/Documents/PrintCompare/FileDataBase"))
 	  you may change Documents if you choose or move this script to the Documents folder on your computer.
-	-Line 272 if this script needs to run on a different computer need you need to update the following
+	- Line 272 if this script needs to run on a different computer need you need to update the following
 		 with open(rf"C:\Users\gradapp\OneDrive - East Tennessee State University\Catalog Differences\{generate_readable_html_filename(programlink[i])}+.html", 'w', encoding='utf-8') as f:
                     f.write(diffHtml)
 

@@ -16,10 +16,10 @@
   not running on gradApp computer or account
 
 2. So update the following accordingly
-	-Line 228 #dynamically get all filenames of  the old files
+	- Line 228 #dynamically get all filenames of  the old files
 	  oldfiles(("C:/Users/your_username/Documents/PrintCompare/FileDataBase"))
 	  you may change Documents if you choose or move this script to the Documents folder on your computer.
-	-Line 272 if this script needs to run on a different computer need you need to update the following
+	- Line 272 if this script needs to run on a different computer need you need to update the following
 		 with open(rf"C:\Users\gradapp\OneDrive - East Tennessee State University\Catalog Differences\{generate_readable_html_filename(programlink[i])}+.html", 'w', encoding='utf-8') as f:
                     f.write(diffHtml)
 

@@ -311,4 +311,4 @@ elapsed_time_min = elapsed_time/60
 
 # Print the elapsed time
 print(f"Elapsed time: {elapsed_time} seconds")
-print(f"Elapsed time: {elapsed_time_min} seconds")
+print(f"Elapsed time: {elapsed_time_min} mins")

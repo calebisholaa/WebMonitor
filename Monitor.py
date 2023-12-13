@@ -262,9 +262,9 @@ for i in range(len((new_pdf))):
 
     if new_pdf[i].replace("_new","") == old_pdf_filenameCopy.replace("_old",""):  
     #check if there is a difference in both pdf files
-        change_in_pdf = changes(new_pdf[i], old_pdf_filename)
+        change_in_pdf = changes(new_pdf[i], f"C:/Users/gradapp/Documents/PrintCompare/FileDataBase/{old_pdf_filename}")
         if change_in_pdf:
-            diffHtml = generate_diff_html(new_pdf[i], old_pdf_filename)
+            diffHtml = generate_diff_html(new_pdf[i], f"C:/Users/gradapp/Documents/PrintCompare/FileDataBase/{old_pdf_filename}")
             # Save the HTML to a file or display it as needed              
             #with open(rf"C:\Users\gradapp\OneDrive - East Tennessee State University\Catalog Differences_1\{file_name_from_url(programlink[i])}+.html", 'w', encoding='utf-8') as f:
                     # f.write(diffHtml)

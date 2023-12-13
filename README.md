@@ -10,7 +10,7 @@
 	- Monitor.py is the script needed to monitor the difference in the catalogs
 	- MainJob runs the Monitor.py on a schduler everyday at 10am
 ## Notifications
-	This script works with Power Automate to send a teams card once a change is detected (this may limit the script to only run on a gradapp computer)
+This script works with Power Automate to send a teams card once a change is detected (this may limit the script to only run on a gradapp computer)
 ## Running on your local machine -IMPORTANT
 1. This script contains paths to files and folders this script would fail if it's
   not running on gradApp computer or account

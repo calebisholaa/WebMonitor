@@ -277,15 +277,16 @@ for i in range(len((new_pdf))):
 
 
 
+
 try:
     log.info("Start Deleting old files...")
     for i in range(len(old_pdf)):
         #delete all old file
-        delete_file_by_path(file_name_from_url(programlink[i])+"_old.pdf")
+        delete_file_by_path(f"C:/Users/gradapp/Documents/PrintCompare/FileDataBase/{file_name_from_url(programlink[i])}_old.pdf")
 except:
     log.info("Out of bounds occured, deleting remaining files")
     #this makes sure to delete lingering old files
-    delete_old_pdfs("C:/Users/gradapp/Documents/PrintCompare")   #<-n change file path as need 
+    delete_old_pdfs("C:/Users/gradapp/Documents/PrintCompare/FileDataBase")   #<-n change file path as need 
 
 
 log.info("New files becoming old")
